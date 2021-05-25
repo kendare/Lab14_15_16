@@ -1,0 +1,13 @@
+language: cpp
+compiler:
+  - gcc
+  - clang
+before_script:
+  - mkdir ../build
+  - cd ../build
+script:
+  - cmake ../Lab14_15_16
+  - make -j
+  - ./tablestest/tablestest
+notifications:
+  email: false
